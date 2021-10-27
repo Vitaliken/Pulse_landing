@@ -24,6 +24,7 @@
         font-size: 18px;
         font-weight: 700;
         text-decoration: none;
+        margin-bottom: 5px;//чуть отодвинем от себя нижнюю кнопку ЗАКАЗАТЬ Звонок
         &:hover {
             color: #fff;
             text-decoration: none; //при наведении ничего не менять в стиле (псевдокласс)
