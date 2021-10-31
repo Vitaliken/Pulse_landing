@@ -48,4 +48,27 @@ $(document).ready(function(){
 
         toggleSlide('.catalog-item__link');
         toggleSlide('.catalog-item__back');
-  });
+
+
+
+    
+    //modal:
+    $('[data-modal="consultation"]').on('click', function() {//получить элемент со страницы с помощью атрибута "consultation
+        $('.overlay, #consultation').fadeIn();//по клику срабатывает функция fadeIn(парам времени) к элементам оверлай и консульт
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks, #order').fadeOut();//аналог , но для закрытия модального окна
+    });
+    // $('.button_mini').on('click', function() {//аналог первого, но для заказа товара
+    //     $('.overlay, #order').fadeIn();
+    // });
+    $('.button_mini').each(function(i){//замена текста(названия) в модальном окне в соответствии с выбранным товаром
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn();
+        });
+    });
+});
+
+
+ 
