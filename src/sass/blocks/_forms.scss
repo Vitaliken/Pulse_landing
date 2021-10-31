@@ -13,7 +13,7 @@
         color: #4b4b4b;
         font-size: 14px;
         font-weight: 300;
-        &:nth-child(3) {
+        &:nth-last-child(2) {
             margin-bottom: 20px;//отступ 20 пикс
         }
     }

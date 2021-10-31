@@ -68,6 +68,44 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn();
         });
     });
+
+
+
+
+
+
+    //validation Написана функция, которая выполняется для трёх форм внизу
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2,
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите своё имя",
+                    minlength: jQuery.validator.format("Введите минимум {0} символа!")
+                },
+                phone: "Пожалуйста, введите номер телефона",
+                email: {
+                    required: "Введите почтый адрес для связи",
+                    email: "Адрес электронной почты должен соответствовать шаблону name@domain.com"
+                }
+              }
+        });
+    }
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
 });
 
 
