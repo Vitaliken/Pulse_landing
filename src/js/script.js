@@ -45,7 +45,6 @@ $(document).ready(function(){
                 });
             });
         }
-
         toggleSlide('.catalog-item__link');
         toggleSlide('.catalog-item__back');
 
@@ -73,9 +72,7 @@ $(document).ready(function(){
 
 
 
-
     //validation Написана функция, которая выполняется для трёх форм внизу
-
     function validateForms(form) {
         $(form).validate({
             rules: {
@@ -102,15 +99,37 @@ $(document).ready(function(){
               }
         });
     }
-
     validateForms('#consultation-form');
     validateForms('#consultation form');
     validateForms('#order form');
 
 
 
+
     //mask phone
     $('input[name=phone]').mask("+375(99)999-99-99");
+
+
+
+
+    //mailer
+    $('form').submit(function(e){
+        e.preventDefault();// отключить станд поведение браузера-не перезагружать страницу 
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php", //куда будем отправлять запрос
+            data: $(this).serialize() //те данные, которые мы отправляем на сервер
+        }).done(function(){//после выполнения отправки запроса надо выполнить действия:
+            $(this).find("input").val("");//найти все инпуты и установить пустые значения
+            $('#consultation, #order').fadeOut();//скрыть модалки даже если оне не были открыты
+            $('.overlay, #thanks').fadeIn('slow');//показать модалку СПАСИБО
+
+
+            $('form').trigger('reset');//все мои формы дожны обновиться-очиститься
+        });
+        return false;
+
+    });
 
 });
 
