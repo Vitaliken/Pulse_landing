@@ -149,6 +149,9 @@ $(document).ready(function(){
             return false;
     });
 
+    //подключение wow аниммации
+    new WOW().init();
+
 });
 
 
