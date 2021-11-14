@@ -5,6 +5,12 @@
         width: 750px;
         margin: 0 auto;//выравнить слайдер по центру
     }
+    .slick-slide {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
     .slick-prev, .slick-next { //стилизация стрелок. стилизуем оба, но
         position: absolute;//правому дописываем положение отдельной настройкой
         top: 50%;
@@ -23,3 +29,55 @@
     }
 }
 
+@media screen and (max-width: 890px) {
+    .carousel {
+        &__inner {
+            width: 660px;
+        }
+        .slick-prev, .slick-next { //стилизация стрелок. стилизуем оба, но
+            position: absolute;//правому дописываем положение отдельной настройкой
+            top: 50%;
+            transform: translateY(-50%);
+            left: -40px;
+            border: none;
+            background-color: #ffffff;
+            img {
+                width: 31px;
+                height: 50px;
+            }
+        }
+        .slick-next {
+            left: auto;
+            right: -44px;
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .carousel {
+        &__inner {
+            width: 580px;
+        }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .carousel {
+        &__inner {
+            width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .carousel {
+        &__inner {
+            width: 500px;
+        }
+        .slick-prev, .slick-next { //стилизация стрелок. стилизуем оба, но
+            img {
+                display: none;
+            }
+        }
+    }
+}

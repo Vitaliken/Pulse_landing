@@ -36,3 +36,22 @@
         align-items: flex-end;
     }
 }
+
+@media screen and (max-width: 690px) {
+    .header{
+        &__logo {
+            width: 240px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header{
+        &__logo {
+            width: 250px;
+        }
+        &__official {
+                display: none;
+            }
+        }
+}

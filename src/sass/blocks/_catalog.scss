@@ -169,3 +169,46 @@
         }
     }
 }
+
+@media screen and (max-width: 980px) {
+    .catalog {
+        &-item {
+            width: 420px;
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .catalog {
+        &-item {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .catalog {
+        &-item {
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .catalog {
+        &-item {
+            width: 285px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .catalog {
+        &__content {   
+            justify-content: space-around
+        }
+        &-item {
+            width: 462px;
+        }
+    }
+}

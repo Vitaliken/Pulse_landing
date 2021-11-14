@@ -1,0 +1,50 @@
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container {
+    max-width: 950px; //примерная ширина всего контента
+    margin: 0 auto; //что бы контейнер выровнился по центру
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        max-width: 860px; //примерная ширина всего контента
+        margin: 0 auto; //что бы контейнер выровнился по центру
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .container {
+        max-width: 750px; //примерная ширина всего контента
+        margin: 0 auto; //что бы контейнер выровнился по центру
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .container {
+        max-width: 650px; //примерная ширина всего контента
+        margin: 0 auto; //что бы контейнер выровнился по центру
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .container {
+        max-width: 600px; //примерная ширина всего контента
+        margin: 0 auto; //что бы контейнер выровнился по центру
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 560px; //примерная ширина всего контента
+        margin: 0 auto; //что бы контейнер выровнился по центру
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .container {
+        max-width: 520px; //примерная ширина всего контента
+        margin: 0 auto; //что бы контейнер выровнился по центру
+    }
+}

@@ -41,3 +41,22 @@
         }
     }
 }
+
+@media screen and (max-width: 790px) {
+    .advantages {
+        &__item {
+            max-width: 210px;
+        }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .advantages {
+        &__item {
+            width: 190px;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+    }
+}
