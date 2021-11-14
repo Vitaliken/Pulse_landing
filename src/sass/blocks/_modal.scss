@@ -44,8 +44,13 @@
     }
     label.error {
         border: none;
-        text-align: center;
+        font-size: 14px;
+        margin-top: 3px;
         margin-bottom: 15px;
+        color: red;
+    }
+    input.error {
+        margin-bottom: 0px;
     }
 }
 
