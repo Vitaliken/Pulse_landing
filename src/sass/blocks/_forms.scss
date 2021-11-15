@@ -21,3 +21,10 @@
         margin-top: 25px;//добавили что бы настроить отступ в модалке
     }
 }
+
+@media screen and (max-width: 592px) {
+    .feed-form {
+        min-width: 300px;
+        margin: 36px auto;
+    }
+}

@@ -60,3 +60,11 @@
         }
     }
 }
+
+@media screen and (max-width: 592px) {
+    .advantages {
+        &__item {
+            width: 150px;
+        }
+    }
+}

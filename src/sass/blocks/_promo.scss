@@ -62,3 +62,18 @@
     }
 }
 
+
+@media screen and (max-width: 592px) {
+    .promo {
+        &__header {
+            font-size: 36px;
+        }
+        &__subheader {
+            margin-top: 0px;
+            font-size: 20px; 
+        }
+        &__icons {
+            margin-top: 45px;
+        }
+    }
+}

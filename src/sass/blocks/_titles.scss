@@ -10,3 +10,12 @@
         text-align: left;
     }
 }
+
+@media screen and (max-width: 592px) {
+    .title {
+        &_left {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}

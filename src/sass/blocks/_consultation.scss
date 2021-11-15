@@ -21,3 +21,15 @@
         margin-bottom: 0px;
     }
 }
+
+@media screen and (max-width: 592px) {
+    .consultation {
+        min-height: 580px;
+        padding: 50px 0 32px 0;
+        &__descr {
+            margin-top: 26px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}

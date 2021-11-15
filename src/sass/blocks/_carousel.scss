@@ -81,3 +81,11 @@
         }
     }
 }
+
+@media screen and (max-width: 592px) {
+    .carousel {
+        &__inner {
+            width: 460px;
+        }
+    }
+}
