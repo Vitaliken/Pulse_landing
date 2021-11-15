@@ -74,6 +74,25 @@
         }
         &__icons {
             margin-top: 45px;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .promo {
+        &__header {
+            text-align: center;
+            font-size: 36px;
+        }
+        &__subheader {
+            text-align: center;
+            font-size: 15px; 
+        }
+        &__icons {
+            width: calc(100% - 20px);
+            margin-top: 45px;
+            justify-content: space-around;
         }
     }
 }

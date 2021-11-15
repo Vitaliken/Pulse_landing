@@ -59,3 +59,26 @@
         border: none;
     }
 }
+
+@media screen and (max-width: 592px) {
+    .footer {
+        &__info {
+            width: 430px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .footer {
+        &__info {
+            width: 100%;
+        }
+        &__social-item {
+            width: 40px;
+            height: 40px;
+        }
+        img {
+            height: 22px;
+        }
+    }
+}

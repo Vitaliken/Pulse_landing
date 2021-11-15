@@ -59,5 +59,22 @@
 @media screen and (max-width: 592px) {
     .header{
         margin-top: 20px;
+        justify-content: space-around;
+        &__logo {
+            width: 220px;
         }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .header{
+        flex-direction: column;
+        margin-top: 20px;
+        &__logo {
+            width: 290px;
+        }
+        &__phone {
+            margin-top: 20px;
+        }
+    }
 }

@@ -33,3 +33,11 @@
         }
     }
 }
+
+@media screen and (max-width: 460px) {
+    .consultation {
+        &__descr {
+            width: calc(100% - 20px);
+        }
+    }
+}

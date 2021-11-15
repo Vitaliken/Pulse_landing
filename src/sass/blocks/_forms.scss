@@ -24,7 +24,14 @@
 
 @media screen and (max-width: 592px) {
     .feed-form {
-        min-width: 300px;
+        width: 300px;
+        margin: 36px auto;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .feed-form {
+        width: 220px;
         margin: 36px auto;
     }
 }

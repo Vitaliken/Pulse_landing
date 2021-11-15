@@ -19,3 +19,12 @@
         }
     }
 }
+
+@media screen and (max-width: 460px) {
+    .title {
+        font-size: 26px;
+        &_left {
+            font-size: 20px;
+        }
+    }
+}

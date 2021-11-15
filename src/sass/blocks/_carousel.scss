@@ -85,7 +85,15 @@
 @media screen and (max-width: 592px) {
     .carousel {
         &__inner {
-            width: 460px;
+            width: 368px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .carousel {
+        &__inner {
+            width: 270px;
         }
     }
 }

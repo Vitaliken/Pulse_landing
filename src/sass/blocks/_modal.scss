@@ -57,3 +57,23 @@
 #consultation, #order, #thanks {
     display: none;
 }
+
+@media screen and (max-width: 470px) {
+    .modal {
+        width: 300px;
+        &__close {
+            right: -28px;
+        }
+        label.error {
+            margin-top: 2px;
+            font-size: 12px;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+        &__descr {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+    }
+}
