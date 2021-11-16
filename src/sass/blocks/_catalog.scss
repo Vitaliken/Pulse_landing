@@ -39,7 +39,7 @@
     &__content {
         margin-top: 60px;
         display: none;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         &_active {
             display: flex;
@@ -112,6 +112,7 @@
             width: calc(200% + 40px);
         }
         &__content {
+            justify-content: space-evenly;
             width: 50%;
             margin-right: 0px;
             transform: translateX(-100%);
