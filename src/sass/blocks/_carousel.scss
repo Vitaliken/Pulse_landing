@@ -66,14 +66,6 @@
         &__inner {
             width: 500px;
         }
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .carousel {
-        &__inner {
-            width: 500px;
-        }
         .slick-prev, .slick-next { //стилизация стрелок. стилизуем оба, но
             img {
                 display: none;

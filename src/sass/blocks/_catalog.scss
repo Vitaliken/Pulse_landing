@@ -196,14 +196,6 @@
 
 @media screen and (max-width: 690px) {
     .catalog {
-        &-item {
-            width: 285px;
-        }
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .catalog {
         &__content {   
             justify-content: space-around;
         }
