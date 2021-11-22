@@ -13,9 +13,10 @@
     label.error {//для настройки отобр ошибок в мадалках-сообщение об ошибке
         border: none;
         font-size: 14px;
-        color: red;
+        color: white;
         margin-bottom: 15px;
         margin-top: 3px;
+        text-shadow: 1px 1px 6px black;
     }
     input.error {
         margin-bottom: 0px;
@@ -37,7 +38,7 @@
 @media screen and (max-width: 460px) {
     .consultation {
         &__descr {
-            width: calc(100% - 20px);
+            width: 100%;
         }
     }
 }
